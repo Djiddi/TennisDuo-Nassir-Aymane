@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connexion.css">
+    <title>Connexion</title>
+</head>
+<body>
+   <div class="container">
+        <form id="loginForm" action="accueil.html" method="post" class="login-form">
+            <h1>Connexion</h1>
+            <input id="username" type="text" placeholder="Votre nom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Le nom ne peut contenir que des lettres et des espaces." required ><br>
+            <input id="password" type="password" placeholder="Votre mot de passe" required ><br>
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Se souvenir de moi</label><br>
+            <p>CaptchaAntiSpam: En quelle année est écrit le livre 1984 ?</p>
+            <input type="radio" id="year2021" > 
+            <label for="year2021">2021</label> 
+            <input type="radio" id="year1984" checked> 
+            <label for="year1984">1984</label> 
+            <input type="radio" id="year1949"> 
+            <label for="year1949">1949</label> <br>
+            <button type="submit" id="loginButton">Se connecter</button>
+            <button type="reset">Réinitialiser</button>
+        </form>
+        <div id="errorMessages"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index2.js"></script>
+</body>
+</html>

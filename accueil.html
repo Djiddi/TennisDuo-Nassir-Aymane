@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>exo RWD site afpa</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="exoMenu.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- entete et navigation -->
+    <header>
+        <nav>
+            <!-- La barre de navigation -->
+            <ul class="topnav">
+                <!-- Chaque élément de la barre de navigation -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- Le logo du site -->
+                <li class="logo"><a href="#"><img src="logo.png" alt="Logo de votre site"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section de contenu avec un titre et un texte d'introduction -->
+    <div class="div1">
+        <h2>Menu général :</h2>
+        <h3>Bienvenue au Tournoi de Tennis!</h3>
+        <h4>Ici, vous pouvez enregistrer des joueurs, des arbitres, des courts, et planifier des matchs, ou enregistrer
+            des résultats de matchs.</h4>
+    </div>
+    <br>
+    <br>
+    <br> <!-- Espacements -->
+    <!-- Section principale de contenu -->
+    <main id="parent">
+        <article>
+            <!-- Conteneur pour organiser le contenu en colonnes -->
+            <div class="container">
+                <!-- Première partie du conteneur avec des liens d'action -->
+                <div class="container1">
+                    <a href="enregistrer_joueur.html" class="img">
+                        <img src="joueur.jpg" alt="enregistrer_joueur"></a>
+
+                    <a href="enregistrer_arbitres.html" class="img">
+
+                        <img src="arbitre.jpg" alt="arbitre"></a>
+                    <a href="enregistrer_courts.html" class="img">
+
+                        <img src="terrain.jpg" alt="enregistrer_courts"></a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <!-- Deuxième partie du conteneur avec d'autres liens d'action -->
+                <div class="container2">
+                    <a href="planifier_match.html" class="img">
+                        <img src="plan.jpg" alt="planifier_match"></a>
+
+                    <a href="resultats.html" class="img">
+                        <img src="resultats.jpg" alt="resultat"></a>
+
+                    <a href="après-déconnection.html" class="img">
+                        <img src="se_deconnecter.png" alt="se déconnecter"></a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- Pied de page du site -->
+    <div class="footer">
+        <footer>
+            Site réalisé par Mr X
+            <a href="mailto:developpeur.info@voila.fr"> nous contacter&nbsp;(developpeur.info@afpa.fr)</a>
+            <!-- Liens de validation HTML et CSS -->
+            <a href="https://validator.w3.org/check/referer"><img src="https://www.w3.org/Icons/valid-html401"
+                    alt="Valid HTML!"></a>
+            <a href="http://css-validator.org/check/referer"><img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss.gif" alt="Valid CSS!"></a>
+        </footer>
+    </div>
+</body>
+
+</html>

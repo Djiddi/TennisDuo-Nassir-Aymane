@@ -1,0 +1,61 @@
+
+input[type="submit"] {
+    background-color:#4290aa; /* Change la couleur de fond du bouton */
+    color: white; /* Change la couleur du texte du bouton pour une meilleure lisibilité */
+    border: none; /* Supprime la bordure du bouton */
+    padding: 10px 20px; /* Ajoute du remplissage au bouton pour un aspect plus esthétique */
+}
+
+label {
+    display: inline-block;
+    width: 100px; /* Définissez la largeur de tous les labels */
+    text-align: right;
+    margin-right: 20px; /* Ajoute de l'espace à droite des étiquettes */
+}
+.container {
+    text-align: center; /* Centre le contenu horizontalement */
+}
+
+h1 {
+  
+    border-radius: #828282;
+
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul.topnav li {float: left;  width: 20%;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {background-color: red;}
+
+div {
+    background-color: gray; text-align: center;
+}
+
+#formulaire-joueur {
+    background-color: aqua; 
+    text-align: center;
+}
+
+body {
+    background-image: url(terrain_tennis.jpg);
+}
+
+.footer {
+    text-align: center;
+    background-color: aqua;
+    margin-top: 100px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planification des matchs</title>
+    <link rel="stylesheet" href="plannifier_match.css">
+    <script src="matchs.js"></script>
+</head>
+
+<body>
+    <!-- Formulaire pour planifier des matchs -->
+    <form id="formulaire-matchs" onsubmit="return validateForm(event)">
+
+        <header> <!-- En-tête de la page -->
+
+            <nav> <!-- Barre de navigation -->
+
+                <!-- Liste des liens de navigation -->
+                <ul class="topnav">
+                    <li><a href="accueil.html">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <div class="plan" >
+            <h1>Planification des matchs</h1>
+            <p>Pour créer un match, sélectionnez un tournoi, deux joueurs, un arbitre, un court et une date.</p>
+        </div>
+
+        <!-- Sélection du tournoi -->
+        <label for="tournoi">Tournoi</label>
+        <select id="tournoi" name="tournoi">
+            <option value="Selectionnez">Selectionnez</option>
+            <option value="simpleHomme">Simple Homme</option>
+            <option value="simpleFemme">Simple Femme</option>
+        </select><br><br>
+
+        <!-- Sélection des joueurs -->
+        <label for="joueur1">Joueur 1</label>
+        <select id="joueur1" name="joueur1" required>
+            <option value="" disabled selected>Selectionnez</option>
+            <option value="Roger Federer">Roger Federer</option>
+            <option value="Rafael Nadal">Rafael Nadal</option>
+            <option value="Serena Williams">Serena Williams</option>
+            <option value="Naomi Osaka">Naomi Osaka</option>
+        </select><br><br>
+
+        <div id="joueur2-container"> <!-- Conteneur pour le champ joueur 2 et le message d'erreur -->
+            <label for="joueur2">Joueur 2</label>
+            <select id="joueur2" name="joueur2" required>
+                <option value="" disabled selected>Selectionnez</option>
+                <option value="Rafael Nadal">Rafael Nadal</option>
+                <option value="Andy Murray">Andy Murray</option>
+                <option value="Simona Halep">Simona Halep</option>
+                <option value="Ashleigh Barty">Ashleigh Barty</option>
+            </select>
+            <span id="joueur2-error"></span><br> <!-- Message d'erreur près du champ joueur2 -->
+        </div> <br>
+
+        <!-- Sélection de l'arbitre -->
+        <label for="arbitre">Arbitre</label>
+        <select id="arbitre" name="arbitre" required>
+            <option value="" disabled selected>Selectionnez</option>
+            <option value="Carlos Ramos">Carlos Ramos</option>
+            <option value="Mohamed Lahyani">Mohamed Lahyani</option>
+            <option value="Eva Asderaki-Moore">Eva Asderaki-Moore</option>
+            <option value="Pascal Maria">Pascal Maria</option>
+        </select><br><br>
+
+        <!-- Sélection du court -->
+        <label for="court">Court</label>
+        <select id="court" name="court" required>
+            <option value="" disabled selected>Selectionnez</option>
+            <option value="Court central">Court central</option>
+            <option value="Court numéro 1">Court numéro 1</option>
+            <option value="Court numéro 2">Court numéro 2</option>
+            <option value="Court numéro 3">Court numéro 3</option>
+        </select><br><br>
+
+        <!-- Sélection de la date -->
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <input type="submit" value="Enregistrer le match" required>
+
+    </form>
+
+    <div id="liste-matchs">
+        <h2>Liste des matchs enregistrés</h2>
+        <ul id="matchs-list"></ul>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="matchs.js"></script>
+    <div class="footer">
+        <footer>
+            Site réalisé par Mr X
+            <a href="mailto:developpeur.info@voila.fr"> nous contacter&nbsp;(developpeur.info@afpa.fr)
+                <a href="https://validator.w3.org/check/referer">
+                    <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML!">
+                </a>
+                <a href="http://css-validator.org/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss.gif" alt="Valid CSS!" />
+        </footer>
+    </div>
+
+</body>
+
+</html>

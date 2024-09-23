@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="enregistrer_joueur.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li><a href="accueil.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>Enregistrement d'un <br> nouveau joueur </h1>
+        <p>Enregistrer un nouveau joueur en indiquant son nom, son prénom, son sexe <br> et sa nationalité.</p>
+    </div>
+
+    <form id="formulaire-joueur">
+        <br>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Le nom ne peut contenir que des lettres et des espaces." required><br><br>
+        
+    
+        <label for="prénom">Prénom</label>
+        <input type="text" id="prénom" name="prenom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Le prenom ne peut contenir que des lettres et des espaces." required><br><br>
+    
+        <label for="pays">Nationalité:</label>
+        <select id="pays" name="pays" required>
+            <option value="" disabled selected hidden>Sélectionnez une nationalité</option>
+            <option value="france">France</option>
+            <option value="italie">Italie</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Belgique">Belgique</option>
+        </select><br><br>
+    
+        <label>Sexe:</label> <!-- Libellé Sexe -->
+        <label for="feminin">Féminin</label> 
+        <input type="radio" id="feminin" name="sexe" value="Feminin" required> 
+        
+        <label for="masculin">Masculin</label> 
+        <input type="radio" id="masculin" name="sexe" value="Masculin" required> 
+        <br><br>
+    
+        <input type="submit" value="Enregistrer le joueur">
+    </form>
+    
+    
+    
+
+    <div id="afficher">
+        <h1>Liste des joueurs</h1>
+        <ul id="liste-joueurs"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="enregistrer_joueur.js"></script>
+
+    <div class="footer">
+        <footer>
+            Site réalisé par Mr X
+            <a href="mailto:developpeur.info@voila.fr">nous contacter&nbsp;(developpeur.info@afpa.fr)</a>
+            <a href="https://validator.w3.org/check/referer"><img src="https://www.w3.org/Icons/valid-html401"
+                    alt="Valid HTML!"></a>
+            <a href="http://css-validator.org/check/referer"><img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss.gif" alt="Valid CSS!"></a>
+        </footer>
+
+    </div>
+</body>
+
+</html>

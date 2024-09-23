@@ -1,0 +1,22 @@
+div {
+    background-color: aliceblue;
+     text-align: center;
+}
+
+button{
+    background-color: lightgreen; 
+    width: 250px;height: 50px;
+}
+ul.topnav li a:hover {
+    background-color: red;
+}
+.footer {
+    text-align: center;
+    background-color: aqua;
+    margin-top: 300px;
+}
+
+body {
+    background-image: url(terrain_tennis.jpg);
+}
+

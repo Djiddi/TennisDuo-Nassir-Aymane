@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="enregistrer_arbitres.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li><a href="accueil.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="div1">
+        <h1>Enregistrement d'un nouveau arbitre</h1>
+        <p>Enregistrer un nouveau joueur en indiquant son nom, son prénom, sa nationalité et son niveau.</p>
+    </div><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form id="formulaire-arbitres">
+        <br>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Le nom ne peut contenir que des lettres et des espaces." required><br>
+        <br>
+        <label for="prénom">Prénom</label>
+        <input type="text" id="prénom" name="prenom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Le prenom ne peut contenir que des lettres et des espaces." required><br>
+        <br>
+        <label for="pays">Nation:</label>
+        <select id="pays" name="pays" required>
+            <option value="" disabled selected hidden>Sélectionnez une nation</option>
+            <option value="france">France</option>
+            <option value="italie">Italie</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Belgique">Belgique</option>
+        </select><br><br>
+        <label for="niveau">Niveau :</label>
+        <select id="niveau" name="niveau" required>
+            <option value="" disabled selected hidden>Sélectionnez un niveau</option>
+            <option value="Chaise">Chaise</option>
+            <option value="ligne">Ligne</option>
+        </select><br>
+        <br>
+        <input id="submit" type="submit" value="Enregistrer l'arbitre">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="div2">
+        <h1>Liste des arbitres</h1>
+        <ul id="liste-arbitres"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="enregistrer_arbitres.js"></script>
+    <div class="footer">
+        <footer>
+            Site réalisé par Mr X
+            <a href="mailto:developpeur.info@voila.fr">nous contacter&nbsp;(developpeur.info@afpa.fr)</a>
+            <a href="https://validator.w3.org/check/referer"><img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML!"></a>
+            <a href="http://css-validator.org/check/referer"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss.gif" alt="Valid CSS!"></a>
+        </footer>
+    </div>
+</body>
+
+</html>

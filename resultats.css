@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 70px 20px 20px; /* Ajout de padding pour l'espace entre l'en-tête et le contenu */
+    margin: 0; /* Suppression des marges par défaut */
+    background-image: url(terrain_tennis.jpg);
+}
+
+.match {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 50px;
+    top: 0; /* Position fixe en haut de la fenêtre */
+    position: fixed;
+    width: 100%;
+}
+
+ul.topnav li {
+    float: left;
+    width: 20%;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+.player {
+    font-weight: bold;
+}
+
+.logo {
+    float: right; /* Alignement du logo à droite */
+}
+
+.logo img {
+    width: 13%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    background-color: aqua;
+    margin-top: 200px; /* Ajout de la marge supérieure pour le pied de page */
+}

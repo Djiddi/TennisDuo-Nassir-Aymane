@@ -1,0 +1,68 @@
+body {
+    background-image: url(terrain_tennis.jpg);
+}
+
+input[type="submit"] {
+    background-color:red; /* Change la couleur de fond du bouton */
+    color: white; /* Change la couleur du texte du bouton pour une meilleure lisibilité */
+    border: none; /* Supprime la bordure du bouton */
+    padding: 10px 20px; /* Ajoute du remplissage au bouton pour un aspect plus esthétique */
+}
+
+label {
+    display: inline-block;
+    width: 100px; /* Définissez la largeur de tous les labels */
+    text-align: right;
+    margin-right: 20px; /* Ajoute de l'espace à droite des étiquettes */
+   
+}
+.container {
+    text-align: center; /* Centre le contenu horizontalement */
+    background-color: gray;
+}
+
+h1 {
+  
+    border-radius: #d4d4d4;
+    color: black;
+}
+
+#formulaire-courts{
+    text-align: center;
+    background-color: aqua;
+    
+}
+
+p {
+    color: black;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul.topnav li {float: left;  width: 20%;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {background-color: red;}
+
+.liste {
+    text-align: center; background-color: lightblue;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: aqua;
+    margin-top: 100px;
+}
